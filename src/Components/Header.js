@@ -7,7 +7,7 @@ import {
   Form,
   Button,
 } from "react-bootstrap";
-import logo from "./logo192.png";
+import logo from "./logo.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from "../Pages/Home";
@@ -36,15 +36,23 @@ export default class Header extends Component {
                   className="d-inline-block align-top"
                   alt="logo"
                 />
-                My site
+                Yoga Nest
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link as={Link} to="/">Home</Nav.Link>
-                  <Nav.Link as={Link} to="/about">About us</Nav.Link>
-                  <Nav.Link as={Link} to="/contacts">Contacts</Nav.Link>
-                  <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                  <Nav.Link as={Link} to="/">
+                    Главная
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/about">
+                    О нас
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/contacts">
+                    Контакты
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/blog">
+                    Расписание и цены
+                  </Nav.Link>
                 </Nav>
                 <Form className="d-flex">
                   <FormControl
